@@ -30,13 +30,6 @@ describe('when clicking the `add-gift` button', () => {
     expect(app.state().gifts).toEqual([{ id: id }]);
   });
 
-  // it('adds 2 new gifts to `state`', () => {
-  //   expect(app.state().gifts).toEqual([{ id: id }]);
-  //   app.find('.btn-add').simulate('click');
-  //   expect(app.state().gifts).toEqual([{ id: id, id: id+1 }]);
-  //
-  // });
-
   it('adds a new gift to the rendered list', () => {
     expect(app.find('.gift-list').children().length).toEqual(1);
   });
